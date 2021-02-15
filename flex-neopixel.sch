@@ -1,0 +1,258 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 10posFPC:10POSFPC J1
+U 1 1 60441410
+P 3875 5550
+F 0 "J1" H 4383 5434 50  0000 L CNN
+F 1 "10POSFPC" H 4383 5343 50  0000 L CNN
+F 2 "10posFPC:10pins-flex" H 3875 5550 50  0001 C CNN
+F 3 "" H 3875 5550 50  0001 C CNN
+	1    3875 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D3
+U 1 1 6044172F
+P 3850 4750
+F 0 "D3" V 3896 5094 50  0000 L CNN
+F 1 "WS2812B" V 3805 5094 50  0000 L CNN
+F 2 "chickadee:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm_HandSolder" H 3900 4450 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3950 4375 50  0001 L TNN
+	1    3850 4750
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED:WS2812B D2
+U 1 1 60441B38
+P 3850 3825
+F 0 "D2" V 3896 4169 50  0000 L CNN
+F 1 "WS2812B" V 3805 4169 50  0000 L CNN
+F 2 "chickadee:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm_HandSolder" H 3900 3525 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3950 3450 50  0001 L TNN
+	1    3850 3825
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED:WS2812B D4
+U 1 1 60442114
+P 3850 3025
+F 0 "D4" V 3896 3369 50  0000 L CNN
+F 1 "WS2812B" V 3805 3369 50  0000 L CNN
+F 2 "chickadee:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm_HandSolder" H 3900 2725 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3950 2650 50  0001 L TNN
+	1    3850 3025
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED:WS2812B D1
+U 1 1 60442847
+P 3850 2200
+F 0 "D1" V 3896 2544 50  0000 L CNN
+F 1 "WS2812B" V 3805 2544 50  0000 L CNN
+F 2 "chickadee:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm_HandSolder" H 3900 1900 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3950 1825 50  0001 L TNN
+	1    3850 2200
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 60444092
+P 3650 2600
+F 0 "C1" V 3421 2600 50  0000 C CNN
+F 1 "0.1uF" V 3512 2600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3650 2600 50  0001 C CNN
+F 3 "~" H 3650 2600 50  0001 C CNN
+	1    3650 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4325 5550 4325 5050
+Wire Wire Line
+	4325 5050 4150 5050
+Wire Wire Line
+	4150 5050 4150 4750
+Wire Wire Line
+	4150 4750 4150 4300
+Connection ~ 4150 4750
+Wire Wire Line
+	4150 2200 4150 2600
+Connection ~ 4150 3825
+Wire Wire Line
+	3425 5550 3425 5050
+Wire Wire Line
+	3425 5050 3550 5050
+Wire Wire Line
+	3550 5050 3550 4750
+Wire Wire Line
+	3550 3825 3550 4300
+Connection ~ 3550 4750
+Connection ~ 4150 3025
+Wire Wire Line
+	4150 3025 4150 3425
+Wire Wire Line
+	3550 3825 3550 3425
+Connection ~ 3550 3825
+Wire Wire Line
+	3550 3025 3550 2600
+Connection ~ 3550 3025
+Wire Wire Line
+	3550 2200 3550 2600
+Connection ~ 3550 2600
+Wire Wire Line
+	3850 2500 3850 2725
+Wire Wire Line
+	3850 3325 3850 3525
+Wire Wire Line
+	3850 4125 3850 4450
+Wire Wire Line
+	3850 5050 3850 5275
+Wire Wire Line
+	3850 5275 3625 5275
+Wire Wire Line
+	3625 5275 3625 5550
+NoConn ~ 3525 5550
+NoConn ~ 3725 5550
+NoConn ~ 3825 5550
+NoConn ~ 3925 5550
+NoConn ~ 4025 5550
+NoConn ~ 4125 5550
+NoConn ~ 4225 5550
+Wire Wire Line
+	3750 2600 4150 2600
+Connection ~ 4150 2600
+Wire Wire Line
+	4150 2600 4150 3025
+$Comp
+L Device:C_Small C2
+U 1 1 6044B357
+P 3650 3425
+F 0 "C2" V 3421 3425 50  0000 C CNN
+F 1 "0.1uF" V 3512 3425 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3650 3425 50  0001 C CNN
+F 3 "~" H 3650 3425 50  0001 C CNN
+	1    3650 3425
+	0    1    1    0   
+$EndComp
+Connection ~ 3550 3425
+Wire Wire Line
+	3550 3425 3550 3025
+$Comp
+L Device:C_Small C3
+U 1 1 6044BBDE
+P 3650 4300
+F 0 "C3" V 3421 4300 50  0000 C CNN
+F 1 "0.1uF" V 3512 4300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3650 4300 50  0001 C CNN
+F 3 "~" H 3650 4300 50  0001 C CNN
+	1    3650 4300
+	0    1    1    0   
+$EndComp
+Connection ~ 3550 4300
+Wire Wire Line
+	3550 4300 3550 4750
+$Comp
+L Device:C_Small C4
+U 1 1 6044C0A3
+P 3650 5150
+F 0 "C4" V 3421 5150 50  0000 C CNN
+F 1 "0.1uF" V 3512 5150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3650 5150 50  0001 C CNN
+F 3 "~" H 3650 5150 50  0001 C CNN
+	1    3650 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 3425 4150 3425
+Connection ~ 4150 3425
+Wire Wire Line
+	4150 3425 4150 3825
+Wire Wire Line
+	3750 4300 4150 4300
+Connection ~ 4150 4300
+Wire Wire Line
+	4150 4300 4150 3825
+Wire Wire Line
+	3550 5050 3550 5150
+Connection ~ 3550 5050
+Wire Wire Line
+	3750 5150 4150 5150
+Wire Wire Line
+	4150 5150 4150 5050
+Connection ~ 4150 5050
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 6044FA70
+P 4325 5050
+F 0 "#PWR0101" H 4325 4900 50  0001 C CNN
+F 1 "+3.3V" H 4340 5223 50  0000 C CNN
+F 2 "" H 4325 5050 50  0001 C CNN
+F 3 "" H 4325 5050 50  0001 C CNN
+	1    4325 5050
+	1    0    0    -1  
+$EndComp
+Connection ~ 4325 5050
+$Comp
+L power:GND #PWR0102
+U 1 1 6044FFC1
+P 3550 5150
+F 0 "#PWR0102" H 3550 4900 50  0001 C CNN
+F 1 "GND" H 3555 4977 50  0000 C CNN
+F 2 "" H 3550 5150 50  0001 C CNN
+F 3 "" H 3550 5150 50  0001 C CNN
+	1    3550 5150
+	1    0    0    -1  
+$EndComp
+Connection ~ 3550 5150
+$Comp
+L LED:WS2812B D5
+U 1 1 60451EDE
+P 3850 1250
+F 0 "D5" V 3896 1594 50  0000 L CNN
+F 1 "WS2812B" V 3805 1594 50  0000 L CNN
+F 2 "chickadee:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm_HandSolder" H 3900 950 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3950 875 50  0001 L TNN
+	1    3850 1250
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 60452C75
+P 3650 1700
+F 0 "C5" V 3421 1700 50  0000 C CNN
+F 1 "0.1uF" V 3512 1700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3650 1700 50  0001 C CNN
+F 3 "~" H 3650 1700 50  0001 C CNN
+	1    3650 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 2200 4150 1700
+Connection ~ 4150 2200
+Wire Wire Line
+	3550 2200 3550 1700
+Connection ~ 3550 2200
+Connection ~ 3550 1700
+Wire Wire Line
+	3550 1700 3550 1250
+Wire Wire Line
+	3850 1900 3850 1550
+Wire Wire Line
+	3750 1700 4150 1700
+Connection ~ 4150 1700
+Wire Wire Line
+	4150 1700 4150 1250
+$EndSCHEMATC
